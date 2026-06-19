@@ -12,6 +12,16 @@
     --color-bg-alert: #fdeaec;
     --color-theme-primary: #623ce6;
 }
+body.dark {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #aaaaaa;
+    --color-text-alert: #ff6b6b;
+    --color-text-icon: #555555;
+    --color-bg-primary: #1e1e1e;
+    --color-bg-secondary: #121212;
+    --color-bg-alert: #3a1a1a;
+    --color-theme-primary: #8b6cf7;
+}
 
 button, input, select, textarea {
     font: inherit;
@@ -53,6 +63,8 @@ body {
 
 .match-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 2px solid #e0e0e0;
     padding: 16px;
 }
@@ -67,7 +79,17 @@ body {
     display: flex;
     align-items: center;
     line-height: 1;
-    margin-right: auto;
+}
+#theme {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+#theme img {
+    width: 25px;
+    height: 25px;
 }
 
 .match-status::before {
@@ -186,10 +208,10 @@ button.buts {
         width: 95%;
     }
     .match-content{
-        flex-direction: colum;
+        flex-direction: column;
         align-items: center;
     }
-    .colum{
+    .column{
         width: 100%;
         padding: 16px;
     }
@@ -214,7 +236,7 @@ button.buts {
         flex-wrap: wrap;
         gap: 8px;
     }
-    button#match-score{
+    #buts{
         padding: 8px 14px;
         font-size: 14px;
     }

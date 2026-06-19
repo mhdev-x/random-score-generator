@@ -12,3 +12,25 @@ button.addEventListener('click',
     score1.textContent = random1;
     score2.textContent = random2;
 });
+
+let toggleBtn = document.getElementById('theme');
+let themeIcon = toggleBtn.querySelector('img');
+
+let savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    themeIcon.src = 'Medias/sun-with-face.svg';
+}
+
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.src = 'Medias/sun-with-face.svg';
+    } else {
+        localStorage.setItem('theme', 'light');
+        themeIcon.src = 'Medias/new-moon.svg';
+    }
+});
