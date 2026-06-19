@@ -180,3 +180,42 @@ button.buts {
 .buts{
     cursor: help;
 }
+@media screen and (max-width: 600px ) {
+    .match {
+        min-width: unset;
+        width: 95%;
+    }
+    .match-content{
+        flex-direction: colum;
+        align-items: center;
+    }
+    .colum{
+        width: 100%;
+        padding: 16px;
+    }
+    .team-logo{
+        width: 70px;
+        height: 70px;
+    }
+    .team-logo img{
+        width: 35px;
+    }
+    .team-name{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .match-score{
+        font-size: 32px;
+    }
+    .match-score-divider{
+        font-size: 20px;
+    }
+    .match-header{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    button#match-score{
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
