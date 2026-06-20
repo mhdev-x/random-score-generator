@@ -45,14 +45,18 @@ body {
     background-color: var(--color-bg-secondary);
 }
 .wallpaper{
-    background-image: url(Medias/light.jpg);
+    background-image: url(Medias/light.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .dark-wallpaper{
-    background-image: url(Medias/dark.jpg);
+    background-image: url(Medias/dark.webp);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
