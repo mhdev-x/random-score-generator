@@ -45,8 +45,14 @@ body {
     background-color: var(--color-bg-secondary);
 }
 .wallpaper{
-    background-image: url(Medias/hq720.jpg);
-    background-size: 100%;
+    background-image: url(Medias/light.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.dark-wallpaper{
+    background-image: url(Medias/dark.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
